@@ -52,9 +52,6 @@ $(function () {
 		const blankAnswer = document.querySelectorAll('[data-name="blank"]');
 		console.log(blankAnswer);
 
-		
-
-
 		Swal.fire({
 			title: "採点結果",
 			html: 
