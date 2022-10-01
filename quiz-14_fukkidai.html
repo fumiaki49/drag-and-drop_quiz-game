@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="./js/drop.js"></script>
+    <script src="./js/scoring.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="side-header">
+      <p class="site-title">ドラッグ&ドロップ<br>原理Quiz
+      </p>
+      <ul class="quiz-list">
+        <li>
+          <details>
+            <summary>第14回 原理クイズ</summary>
+            <ul class="accordion-list">
+              <li>
+                <a href="./index.html">
+                  <p>・創造原理</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_daraku.html">
+                  <p>・堕落論</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_kourin.html">
+                  <p>・メシア降臨とその再臨の目的</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_syoron.html">
+                  <p>・諸論</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_fukkidai.html">
+                  <p>・復帰基台摂理時代</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_moses.html">
+                  <p>・モーセ路程</p>
+                </a>
+              </li>
+              <li>
+                <a href="./quiz-14_sairin.html">
+                  <p>・再臨論</p>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>第15回 原理クイズ</summary>
+            <ul class="accordion-list">
+              <li>
+                <a href="">
+                  <p>・<span class="">創造原理</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・堕落論</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・メシア降臨とその再臨の目的</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・諸論</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・復帰基台摂理時代</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・モーセ路程</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p>・再臨論</p>
+                </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_kourin">
+        <div class="quiz-title-box">
+          <h1>第14回 原理クイズ 復帰基台摂理時代</h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・神はアベルの供え物は受けられ、カインの供え物は受けられなかったが、その理由はどこにあったのだろうか。アベルは神が取ることのできる相対的な立場で、信仰によって神の<span class="drop" quiz="21" data-name="blank">21</span>にかなうように供え 物をささげたから、神はそれを受けられた。このようにして、アダムの家庭が立てるべき「<span class="drop" quiz="22" data-name="blank">22</span>基台」がつくられるようになったのである。
+          </li>
+          <li>
+            ・天使長が、神にもっと近かったアダムを<span class="drop" quiz="16" data-name="blank">16</span>に立て、彼を通じて神の愛を受けようとはせず、かえってアダムの<span class="drop" quiz="23" data-name="blank">23</span>を奪おうとして堕落してしまったので、「自己の[ 23 ]を離れる堕落性」が生じた。ゆえに、この堕落性を脱ぐためには、天使長の立場にいるカインがアダムの立場にいるアベルを [ 22 ]として、彼を通じて神の愛を受ける立場をとることにより、自分の[ 23 ]を守るべきであったのである。
+          </li>
+          <li>
+            ・ノアのときにはハムではなく、ノア自身が「象徴献祭」をささげたので、ハムが「象徴献祭」に成功した アベルの立場に立つためには、「象徴献祭」に成功したノアと、<span class="drop" quiz="24" data-name="blank">24</span>的に一体不可分の立場に立た なければならなかったのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">生心</button>
+          <button class="drag" quiz="2">恐怖心</button>
+          <button class="drag" quiz="3">契約</button>
+          <button class="drag" quiz="4">個性真理体</button>
+          <button class="drag" quiz="5">大きな</button>
+          <button class="drag" quiz="6">三対象</button>
+          <button class="drag" quiz="7">罪の根</button>
+          <button class="drag" quiz="8">終末</button>
+          <button class="drag" quiz="9">連帯</button>
+          <button class="drag" quiz="10">み意</button>
+          <button class="drag" quiz="11">心情</button>
+          <button class="drag" quiz="12">肉身</button>
+          <button class="drag" quiz="13">正分合作用</button>
+          <button class="drag" quiz="14">位置</button>
+          <button class="drag" quiz="15">愛</button>
+          <button class="drag" quiz="16">同一の</button>
+          <button class="drag" quiz="17">奇跡</button>
+          <button class="drag" quiz="18">選民</button>
+          <button class="drag" quiz="19">創造目的</button>
+          <button class="drag" quiz="20">中保</button>
+          <button class="drag" quiz="21">小さい</button>
+          <button class="drag" quiz="22">直接主管</button>
+          <button class="drag" quiz="23">信仰</button>
+          <button class="drag" quiz="24">血統</button>
+          <button class="drag" quiz="25">責任</button>
+          <button class="drag" quiz="26">復活</button>
+          <button class="drag" quiz="27">二性性相</button>
+          <button class="drag" quiz="28">雲</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
