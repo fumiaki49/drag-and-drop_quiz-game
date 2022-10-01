@@ -65,6 +65,10 @@
   position: relative;
 }
 
+.quiz-list li details .accordion-list li:hover {
+  cursor: pointer;
+}
+
 .quiz-list li details .accordion-list li::after {
   position: absolute;
   left: 0;
@@ -79,7 +83,6 @@
 }
 
 .quiz-list li details .accordion-list li:hover::after {
-  cursor: pointer;
   transform: scale(1, 1);
 }
 

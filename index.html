@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/rest.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="./js/drop.js"></script>
@@ -25,22 +25,22 @@
             <summary>第14回 原理クイズ</summary>
             <ul class="accordion-list">
               <li>
-                <a href="">
+                <a href="./index.html">
                   <p>・創造原理</p>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="./quiz-14_daraku.html">
                   <p>・堕落論</p>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="./quiz-14_kourin.html">
                   <p>・メシア降臨とその再臨の目的</p>
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="./quiz-14_syoron.html">
                   <p>・諸論</p>
                 </a>
               </li>
@@ -108,7 +108,7 @@
     </header>
 
     <main class="quiz-contents">
-      <div class="answer-area" data-barba="container" data-barba-namespace="home">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
         <div class="quiz-title-box">
           <h1>第14回 原理クイズ 創造原理</h1>
           <button id="scoring-btn">採点</button>
@@ -169,5 +169,6 @@
       </div>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
   <script src="./js/barba.js"></script>
 </html>
