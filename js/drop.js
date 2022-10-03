@@ -17,18 +17,17 @@ $(function () {
 	// Drop
 	interact(".drop").dropzone({
 		ondragenter(e) {
-			e.relatedTarget.style.backgroundColor = "rgb(21, 146, 71)"
-			e.relatedTarget.style.color = "#fff"
+			e.relatedTarget.style.backgroundColor = "rgb(21, 146, 71)";
+			e.relatedTarget.style.color = "#fff";
 		},
 		ondragleave(e) {
-			e.relatedTarget.style.backgroundColor = "rgb(160, 230, 188)"
-			e.relatedTarget.style.color = "#333333"
-			e.target.dataset.name = "blank"
+			e.relatedTarget.style.backgroundColor = "rgb(160, 230, 188)";
+			e.relatedTarget.style.color = "#333333";
 		},
 		ondrop(e){
 			const dragQuiz = e.relatedTarget.getAttribute("quiz");
 			const dropQuiz = e.target.getAttribute("quiz");
-			
+
 			if(dragQuiz == dropQuiz) {
 				e.target.dataset.name = "true";
 			} else if(dragQuiz !== dropQuiz) {
@@ -38,6 +37,6 @@ $(function () {
 	}).on("dropactivate", function(e){
 		e.target.classList.add("drop-activated");
 	});
-
+	
 });
 
