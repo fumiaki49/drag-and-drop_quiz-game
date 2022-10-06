@@ -183,22 +183,4 @@
 /* アラート */
 #swal2-content {
   line-height: 35px;
-  width: 25%;
-  margin: 0 auto;
-}
-
-#swal2-content .score-box {
-  width: 100%;
-  margin-left: -7px;
-}
-
-#swal2-content .score-box .score-text {
-  display: inline-block;
-  width: 50%;
-  text-align: right;
-}
-
-#swal2-content .score-box .points {
-  font-size: 25px;
-  padding-left: 20px;
 }
