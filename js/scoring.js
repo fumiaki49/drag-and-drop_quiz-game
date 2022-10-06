@@ -1,19 +1,20 @@
 // scoring
 $(document).on('click', '#scoring-btn', function () {
   const correctAnswer = document.querySelectorAll('[data-name="true"]');
-  console.log(correctAnswer);
-  
   const uncorrectAnswer = document.querySelectorAll('[data-name="false"]');
-  console.log(uncorrectAnswer);
-  
   const blankAnswer = document.querySelectorAll('[data-name="blank"]');
-  console.log(blankAnswer);
+  const quizList = document.querySelectorAll(".drop");
+
+  if ( uncorrectAnswer.length > 0 || blankAnswer.length > 0 ) {
+    Swal.fire({
+      title: "もう一度考えてみよう！",
+      text: "空白 or 不正解の箇所があります" 
+    })
   
-  Swal.fire({
-    title: "採点結果",
-    html: 
-    "<div class = 'score-box'>" + "<span class='score-text'>正解:</span>" + "<span class ='points'>" + correctAnswer.length + "</span>" + "</div>" +
-    "<div class = 'score-box'>" + "<span class='score-text'>不正解:</span>" + "<span class = 'points'>" + uncorrectAnswer.length + "</span>" + "</div>" +
-    "<div class = 'score-box'>" + "<span class='score-text'>空白:</span>" +  "<span class = 'points'>" + blankAnswer.length + "</span>" + "</div>",
-  });
+  } else if( correctAnswer.length == quizList.length ) {
+    Swal.fire({
+      title: "全問正解!",
+      text: "別の問題にも挑戦してみよう！",
+    });
+  };
 });
