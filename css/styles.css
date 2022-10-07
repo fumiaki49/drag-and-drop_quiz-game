@@ -55,7 +55,20 @@
 
 .quiz-list li details .accordion-list {
   margin-top: 7px;
+}
+
+.quiz-list li details[open] .accordion-list {
   animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 
