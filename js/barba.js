@@ -23,10 +23,6 @@ links.forEach(link => {
 barba.init({
   transitions: [{
     name: 'default-transition',
-    // beforeEnter() {
-    //   const scrollElem = document.scrollingElement || document.documentElement
-    //   scrollElem.scrollTop = 0;
-    // },
     async leave() {
       mask.classList.add("active");
       await new Promise(resolve => {
