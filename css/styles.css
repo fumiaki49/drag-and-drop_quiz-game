@@ -108,11 +108,12 @@
 .quiz-contents .answer-area {
   width: 85%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 .quiz-contents .answer-area .quiz-title-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid ;
   padding-bottom: 10px;
