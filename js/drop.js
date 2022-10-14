@@ -10,7 +10,12 @@ $(function () {
 			e.target.posY += e.dy;
 			e.target.style.transform = `translate(${e.target.posX}px, ${e.target.posY}px)`;
 		},
-
+		modifiers: [
+			interact.modifiers.restrict({
+				restriction: '.answer-area',
+				endOnly: true
+			})
+		],
 		autoScroll: true,
 	});
 
