@@ -73,7 +73,7 @@
 
   .quiz-contents .answer-area {
     width: 90%;
-    padding: 20px 0;
+    padding-top: 60px; 
   }
 
   .quiz-contents .answer-area .quiz-title-box {
@@ -110,6 +110,5 @@
   }
 
   @media screen and (max-width: 425px) {
-    
   }
 }
