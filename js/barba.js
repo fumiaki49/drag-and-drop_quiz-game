@@ -20,17 +20,22 @@ links.forEach(link => {
   );
 });
 
-barba.init({
-  transitions: [{
-    name: 'default-transition',
-    async leave() {
-      mask.classList.add("active");
-      await new Promise(resolve => {
-        return setTimeout(resolve, 500);
-      });
-    },
-    afterEnter() {
-      mask.classList.remove('active');
-    }
-  }]
-});
+const windowSize = window.innerWidth;
+if(windowSize >= 1024) {
+  barba.init({
+    transitions: [{
+      name: 'transition-for-pc',
+      async leave() {
+        mask.classList.add("active");
+        await new Promise(resolve => {
+          return setTimeout(resolve, 500);
+        });
+      },
+      afterEnter() {
+        mask.classList.remove("active");
+      }
+    }]
+  });
+} else {
+  barba.init();
+};

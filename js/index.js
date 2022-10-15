@@ -1,5 +1,4 @@
 $(function () {
-
   function judgeWindowSize() {
     const headerElement = $("header");
     const windowSize = $(window).width();
@@ -14,17 +13,22 @@ $(function () {
   };
   judgeWindowSize();
 
-
   function hambergerMenu() {
     const hambergerBtn = $(".hamberger");
-    const menuList = $(".quiz-list");
     const hambergerIcon = $(".hamberger .fa-bars");
-  
+    const quizList = $(".quiz-list");
+    const quizLink = $(".accordion-list li");
+
     $(hambergerBtn).on("click", function() {
-      $(menuList).toggleClass('is-active');
+      $(quizList).toggleClass('is-active');
+      $(hambergerIcon).toggleClass('fa-x');
+    });
+    
+    $(quizLink).on("click", function() {
+      $(quizList).toggleClass('is-active');
       $(hambergerIcon).toggleClass('fa-x');
     });
   };
   hambergerMenu();
-  
+
 });
