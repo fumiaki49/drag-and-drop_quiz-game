@@ -2,7 +2,7 @@ $(function () {
   function judgeWindowSize() {
     const headerElement = $("header");
     const windowSize = $(window).width();
-  
+    
     if(windowSize <= 768) {
       headerElement.removeClass("side-header");
       headerElement.addClass("nav-header");
@@ -12,7 +12,7 @@ $(function () {
     }
   };
   judgeWindowSize();
-
+  
   function hambergerMenu() {
     const hambergerBtn = $(".hamberger");
     const hambergerIcon = $(".hamberger .fa-bars");

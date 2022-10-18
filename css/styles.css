@@ -41,7 +41,7 @@
   content: "+";
   font-weight: bold;
   position: absolute;
-  right: 20px;
+  padding: 0 10px;
   transition: transform 0.5s;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .quiz-list li details .accordion-list {
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .quiz-list li details[open] .accordion-list {
@@ -124,6 +124,11 @@
   font-size: 30px;
 }
 
+.quiz-contents .answer-area .quiz-title-box h1 .quiz-title {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
 .quiz-contents .answer-area .quiz-title-box button {
   font-size: 18px;
   padding: 10px 20px;
@@ -135,6 +140,26 @@
 .quiz-contents .answer-area .quiz-title-box button:hover {
   color: #ffffff;
   background-color: rgb(84, 173, 242);
+}
+
+.answer-area .description-box {
+  margin-top: 20px;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.answer-area .description-box p {
+  display: inline-block;
+}
+
+.answer-area .description-box p .icon {
+  font-size: 25px;
+  margin-right: 5px;
+  float: left;
+}
+
+.answer-area .description-box p .text {
+  background: linear-gradient(transparent 80%, #ff99ab 70%);
 }
 
 .quiz-contents .answer-area .quiz-text {
@@ -158,7 +183,6 @@
 .quiz-contents .answer-area .quiz-text li span {
   display: inline-block;
   border: 1px solid #7c7c7c;
-  border-radius: 5px;
   width: 15%;
   text-align: center;
   color: #7c7c7c;
@@ -183,7 +207,6 @@
   font-size: 16px;
   transition: all 0.3s;
   padding: 5px 0;
-  border-radius: 5px;
   touch-action: none;
 }
 

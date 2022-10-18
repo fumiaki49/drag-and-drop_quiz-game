@@ -53,18 +53,24 @@
   .nav-header .quiz-list li {
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  /* メインエリア */
+  .quiz-list li details summary {
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
   .quiz-list li details summary::after {
     right: unset;
-    padding-left: 10px;
+    padding: 0 10px;
   }
 
   .quiz-list li details .accordion-list li::after {
     width: 0;
   }
+
+  /* メインエリア */
 
   .quiz-contents {
     padding-left: 0;
@@ -83,15 +89,26 @@
   .quiz-contents .answer-area .quiz-title-box h1 {
     font-size: 20px;
   }
+
+  .quiz-contents .answer-area .quiz-title-box h1 .quiz-title {
+    font-size: 18px;
+  }
   
   .quiz-contents .answer-area .quiz-title-box button {
     font-size: 16px;
     padding: 5px 10px;
   }
 
+  .answer-area .description-box p .icon {
+    font-size: 20px;
+    height: 45px;
+  }
+
+  .answer-area .description-box p .text {
+    font-size: 16px;
+  }
+
   .quiz-contents .answer-area .quiz-text {
-    height: 50vh;
-    overflow: scroll;
     margin-top: 10px;
     font-size: 14px;
     line-height: 20px;
@@ -106,9 +123,52 @@
   .quiz-contents .answer-area .select-box button {
     margin-bottom: 5px;
     font-size: 14px;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  .quiz-list li details .accordion-list {
+    font-size: 14px;
   }
 
-  @media screen and (max-width: 425px) {
+  .answer-area .description-box p .icon {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .answer-area .description-box p .text {
+    font-size: 14px;
+  }
+
+  .nav-header .site-title {
+    height: 7%;
+  }
+
+  .nav-header .quiz-list {
+    top: 7%;
+  }
+
+  .swal2-title {
+    font-size: 20px;
+  }
+
+  .quiz-contents .answer-area .quiz-text li {
+    margin-bottom: 10px;
+  }
+
+  .quiz-contents .answer-area .quiz-text li span {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .quiz-contents .answer-area .select-box button {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .answer-area .quiz-title-box h1 .quiz-title {
+    font-size: 16px;
+    padding-left: 5px;
   }
 }
