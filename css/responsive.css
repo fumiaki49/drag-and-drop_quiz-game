@@ -48,6 +48,7 @@
   .nav-header .quiz-list.is-active {
     transform: translateY(0);
     opacity: 1;
+    z-index: 10;
   }
 
   .nav-header .quiz-list li {
@@ -57,7 +58,6 @@
   }
 
   .quiz-list li details summary {
-    font-weight: bold;
     letter-spacing: 5px;
   }
 
