@@ -21,6 +21,7 @@ $(function () {
 
 	// Drop
 	interact(".drop").dropzone({
+		overlap: 0.75,
 		ondragenter(e) {
 			e.relatedTarget.style.backgroundColor = "rgb(21, 146, 71)";
 			e.relatedTarget.style.color = "#fff";
