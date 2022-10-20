@@ -16,5 +16,10 @@ $(document).on('click', '#scoring-btn', function () {
       title: "全問正解!",
       text: "別の問題にも挑戦してみよう！",
     });
+
+    party.confetti(this, {
+      lifetime: party.variation.range(2, 4),
+      count: 100,
+    });
   };
 });
