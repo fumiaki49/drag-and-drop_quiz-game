@@ -17,6 +17,7 @@ $(function () {
 			})
 		],
 		autoScroll: true,
+		speed: 500,
 	});
 
 	// Drop
