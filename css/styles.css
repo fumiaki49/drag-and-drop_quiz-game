@@ -208,6 +208,7 @@
   transition: all 0.3s;
   padding: 5px 0;
   touch-action: none;
+  user-select: none;
 }
 
 .quiz-contents .answer-area .select-box button:hover {
