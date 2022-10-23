@@ -22,7 +22,7 @@ $(function () {
 
 	// Drop
 	interact(".drop").dropzone({
-		overlap: 0.75,
+		overlap: "pointer",
 		ondragenter(e) {
 			e.relatedTarget.style.backgroundColor = "rgb(21, 146, 71)";
 			e.relatedTarget.style.color = "#fff";
@@ -40,6 +40,13 @@ $(function () {
 			} else if(dragQuiz !== dropQuiz) {
 				e.target.dataset.name = "false";
 			}
+
+			const dragRect = e.relatedTarget.getBoundingClientRect();
+			const dropRect = e.target.getBoundingClientRect();
+			e.relatedTarget.posX += dropRect.left-dragRect.left;
+			e.relatedTarget.posY += dropRect.top-dragRect.top;
+			console.log(dragRect,dropRect,e.relatedTarget)
+			e.relatedTarget.style.transform = `translate(${e.relatedTarget.posX}px, ${e.relatedTarget.posY}px)`;
 		},
 	}).on("dropactivate", function(e){
 		e.target.classList.add("drop-activated");
