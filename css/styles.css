@@ -170,6 +170,7 @@
   line-height: 25px;
   padding: 10px 20px;
   letter-spacing: 0.05em;
+  user-select: none;
 }
 
 .quiz-contents .answer-area .quiz-text li {

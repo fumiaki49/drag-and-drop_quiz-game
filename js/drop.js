@@ -43,9 +43,9 @@ $(function () {
 
 			const dragRect = e.relatedTarget.getBoundingClientRect();
 			const dropRect = e.target.getBoundingClientRect();
-			e.relatedTarget.posX += dropRect.left-dragRect.left;
-			e.relatedTarget.posY += dropRect.top-dragRect.top;
-			console.log(dragRect,dropRect,e.relatedTarget)
+
+			e.relatedTarget.posX += dropRect.left - dragRect.left;
+			e.relatedTarget.posY += dropRect.top - dragRect.top;
 			e.relatedTarget.style.transform = `translate(${e.relatedTarget.posX}px, ${e.relatedTarget.posY}px)`;
 		},
 	}).on("dropactivate", function(e){
