@@ -17,14 +17,21 @@
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script>
       $(function(){
-        const headerElement = $('.header');
-        const windowSize = $(window).width();
-
+        let windowSize = $(window).width();
         if(windowSize <= 768) {
           $('.header').load('./mobile-header.html');
-        } else if(windowSize >= 1024) {
+        } else if(windowSize >= 768) {
           $('.header').load('./side-header.html');
         }
+        
+        $(window).resize(function() {
+          windowSize = $(this).width();
+          if(windowSize <= 768) {
+            $('.header').load('./mobile-header.html');
+          } else if(windowSize >= 768) {
+            $('.header').load('./side-header.html');
+          };
+        });
       });
     </script>
     <script src="./js/index.js"></script>
