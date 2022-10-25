@@ -15,102 +15,23 @@
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script>
+      $(function(){
+        const headerElement = $('.header');
+        const windowSize = $(window).width();
+
+        if(windowSize <= 768) {
+          $('.header').load('./mobile-header.html');
+        } else if(windowSize >= 1024) {
+          $('.header').load('./side-header.html');
+        }
+      });
+    </script>
     <script src="./js/index.js"></script>
     <script src="./js/drop.js"></script>
-    <script src="./js/scoring.js"></script>
   </head>
   <body class="default-page" data-barba="wrapper">
-    <header class="side-header">
-      <p class="site-title">
-        <span class="title-text">ドラッグ&ドロップ<br>原理Quiz</span>
-        <span class="hamberger"><i class="fa-solid fa-bars"></i></span>
-      </p>
-      <ul class="quiz-list">
-        <li>
-          <details>
-            <summary>第14回</summary>
-            <ul class="accordion-list">
-              <li>
-                <a href="./index.html">
-                  <p>・創造原理</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_daraku.html">
-                  <p>・堕落論</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_kourin.html">
-                  <p>・メシア降臨とその再臨の目的</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_syoron.html">
-                  <p>・諸論</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_fukkikidai.html">
-                  <p>・復帰基台摂理時代</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_moses.html">
-                  <p>・モーセ路程</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-14_sairin.html">
-                  <p>・再臨論</p>
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>第15回</summary>
-            <ul class="accordion-list">
-              <li>
-                <a href="./quiz-15_souzou.html">
-                  <p>・創造原理</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_daraku.html">
-                  <p>・堕落論</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_kourin.html">
-                  <p>・メシア降臨とその再臨の目的</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_syoron.html">
-                  <p>・諸論</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_fukkikidai.html">
-                  <p>・復帰基台摂理時代</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_moses.html">
-                  <p>・モーセ路程</p>
-                </a>
-              </li>
-              <li>
-                <a href="./quiz-15_sairin.html">
-                  <p>・再臨論</p>
-                </a>
-              </li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+    <header class="header">
     </header>
 
     <main class="quiz-contents">
