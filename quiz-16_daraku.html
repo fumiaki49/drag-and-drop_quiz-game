@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第16回<span class="quiz-title">堕落論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・今まで人間の中に深く根を下ろし、休むことなく人間を罪悪の道に追いこんできた<span class="drop" quiz="9" data-name="blank">9</span>がいったい何であるか、この問題を知る者は一人もいなかった。ただキリスト教信徒のみが、聖書を根拠として、人間始祖アダムとエバが善悪を知る木の果を取って食べ、それが[ 9 ]となったということを 漠然と信じてきたのである。
+          </li>
+          <li>
+            ・ルーシェルと人間始祖が<span class="drop" quiz="10" data-name="blank">10</span>を結び、一体となったので、サタンを中心とする四位基台がつくられると同時に、人間はサタンの子女となってしまったのである。
+          </li>
+          <li>
+            ・サタンもその対象を取り立てて、相対基準を造成し、授受作用をしない限り、サタン的な活動をすることはできない。サタンの対象は、霊界にいる悪霊人たちである。そして、この悪霊人たちの対象は、地上にいる悪人たちの <span class="drop" quiz="11" data-name="blank">11</span>であり、地上にいる悪人たちの[ 11 ]の活動対象は彼らの肉身である。したがって、サタンの勢力は悪霊人たちを通して地上人間の肉身の活動として現れる。
+          </li>
+          <li>
+            ・天使が神に反逆して、エバと血縁関係を結んだとき、<span class="drop" quiz="12" data-name="blank">12</span>的に生じたすべての性稟を、エバはそのまま継承したのであり、こうして天使長の立場におかれるようになったエバと、再び[ 10 ]を結んだアダムも、またこの性稟を受け継ぐようになった。そして、この性稟が、堕落人間のすべての堕落性を誘発する根本的な性稟となってしまったのである。これを堕落性<span class="drop" quiz="13" data-name="blank">13</span>という。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">個性</button>
+          <button class="drag" quiz="2">偶発</button>
+          <button class="drag" quiz="3">主管性</button>
+          <button class="drag" quiz="4">終末</button>
+          <button class="drag" quiz="5">神性</button>
+          <button class="drag" quiz="6">標本</button>
+          <button class="drag" quiz="7">血縁関係</button>
+          <button class="drag" quiz="8">条件</button>
+          <button class="drag" quiz="9">預言</button>
+          <button class="drag" quiz="10">万有原力</button>
+          <button class="drag" quiz="11">心情</button>
+          <button class="drag" quiz="12">出発</button>
+          <button class="drag" quiz="13">贖罪</button>
+          <button class="drag" quiz="14">数理</button>
+          <button class="drag" quiz="15">家庭</button>
+          <button class="drag" quiz="16">因習</button>
+          <button class="drag" quiz="17">反対</button>
+          <button class="drag" quiz="18">創造原理</button>
+          <button class="drag" quiz="19">罪の根</button>
+          <button class="drag" quiz="20">奇跡</button>
+          <button class="drag" quiz="21">雲</button>
+          <button class="drag" quiz="22">中間</button>
+          <button class="drag" quiz="23">愛</button>
+          <button class="drag" quiz="24">責任分担</button>
+          <button class="drag" quiz="25">本性</button>
+          <button class="drag" quiz="26">霊人体</button>
+          <button class="drag" quiz="27">善</button>
+          <button class="drag" quiz="28">信仰</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

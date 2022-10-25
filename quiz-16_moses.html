@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第16回<span class="quiz-title">モーセ路程</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・モーセがサタンの世界であるエジプトから、イスラエルの選民を<span class="drop" quiz="25" data-name="blank">25</span>をもって導きだし、紅海を渡り、荒野を巡って、神が約束された土地であるカナンに向かう路程は、将来、イエスがこの罪悪世界において、第二イスラエルであるキリスト教信徒を[ 25 ]をもって導き、この罪悪世界の苦海を渡り、命の水が乾いた砂漠を巡って、神が約束された創造本然のエデンに復帰するその路程を、先に見せてくださったことにもなるのである。
+          </li>
+          <li>
+            ・第二次路程におけるイスラエル民族は、その「<span class="drop" quiz="26" data-name="blank">26</span>のための摂理」として見せてくださった三 大[ 25 ]と十災禍に接し、モーセはまさしく、神が遣わされた真実なるイスラエルの指導者である、ということを信ずるようになったのであった。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">個性</button>
+          <button class="drag" quiz="2">偶発</button>
+          <button class="drag" quiz="3">主管性</button>
+          <button class="drag" quiz="4">終末</button>
+          <button class="drag" quiz="5">神性</button>
+          <button class="drag" quiz="6">標本</button>
+          <button class="drag" quiz="7">血縁関係</button>
+          <button class="drag" quiz="8">条件</button>
+          <button class="drag" quiz="9">預言</button>
+          <button class="drag" quiz="10">万有原力</button>
+          <button class="drag" quiz="11">心情</button>
+          <button class="drag" quiz="12">出発</button>
+          <button class="drag" quiz="13">贖罪</button>
+          <button class="drag" quiz="14">数理</button>
+          <button class="drag" quiz="15">家庭</button>
+          <button class="drag" quiz="16">因習</button>
+          <button class="drag" quiz="17">反対</button>
+          <button class="drag" quiz="18">創造原理</button>
+          <button class="drag" quiz="19">罪の根</button>
+          <button class="drag" quiz="20">奇跡</button>
+          <button class="drag" quiz="21">雲</button>
+          <button class="drag" quiz="22">中間</button>
+          <button class="drag" quiz="23">愛</button>
+          <button class="drag" quiz="24">責任分担</button>
+          <button class="drag" quiz="25">本性</button>
+          <button class="drag" quiz="26">霊人体</button>
+          <button class="drag" quiz="27">善</button>
+          <button class="drag" quiz="28">信仰</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

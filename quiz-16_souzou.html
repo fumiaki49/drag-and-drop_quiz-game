@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第16回<span class="quiz-title">創造原理</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・無形にいます神の<span class="drop" quiz="1" data-name="blank">1</span>を、我々はいかにして知ることができるだろうか。それは、被造世界を観察することによって、知ることができる。作品を見てその作者の性稟を知ることができるように、この被造万物を見ることによって神の[ 1 ]を知ることができるのである。
+          </li>
+          <li>
+            ・二性性相を中心として見た神と被造世界との関係を要約すれば、被造世界は、無形の主体としていまし給う神の二性性相が、<span class="drop" quiz="2" data-name="blank">2</span>によって、象徴的または形象的な実体として分立された、個性真理体から構成されている神の実体対象である。
+          </li>
+          <li>
+            ・神はあらゆる存在の創造主として、時間と空間を超越して、永遠に自存する絶対者である。したがっ て、神がこのような存在としておられるための根本的な力も、永遠に自存する絶対的なものであり、 同時にこれはまた、被造物が存在するためのすべての力を発生せしめる力の根本でもある。このよう なすべての力の根本にある力を、我々は<span class="drop" quiz="3" data-name="blank">3</span>と呼ぶ。
+          </li>
+          <li>
+            ・被造物の創造が終わるごとに、神はそれを見て良しとされた、と記録されている創世記のみ言を見れば、神は自ら創造された被造物が、<span class="drop" quiz="4" data-name="blank">4</span>の対象となることを願われたことが分かる。このように 被造物が[ 4 ]の対象になることを願われたのは、神がそれを見て喜ばれるためである。
+          </li>
+          <li>
+            ・神の第二祝福を成就するためには、神の二性性相が各々<span class="drop" quiz="5" data-name="blank">5</span>を完成した実体対象として分立され たアダムとエバが夫婦となり、合性一体化して子女を生み殖やし、神を中心として<span class="drop" quizz="6" data-name="blank">6</span>的な四位基台をつくらなければならないのである。
+          </li>
+          <li>
+            ・万物は原理自体の主管性、または自律性により、成長期間(間接主管圏)を経過することによって完成する。けれども、人間は原理自体の主管性や自律性だけでなく、それ自身の<span class="drop" quiz="7" data-name="blank">7</span>を全うしながら、この期間を経過して完成するように創造された。
+          </li>
+          <li>
+            ・被造世界は、神の二性性相に似た人間を<span class="drop" quiz="8" data-name="blank">8</span>として創造されたので、あらゆる存在は、心と体からなる人間の基本形に似ないものは一つもない。したがって、被造世界には、人間の体のような有形実体世界ばかりでなく、その主体たる人間の心のような無形実体世界もまたあるのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">個性</button>
+          <button class="drag" quiz="2">偶発</button>
+          <button class="drag" quiz="3">主管性</button>
+          <button class="drag" quiz="4">終末</button>
+          <button class="drag" quiz="5">神性</button>
+          <button class="drag" quiz="6">標本</button>
+          <button class="drag" quiz="7">血縁関係</button>
+          <button class="drag" quiz="8">条件</button>
+          <button class="drag" quiz="9">預言</button>
+          <button class="drag" quiz="10">万有原力</button>
+          <button class="drag" quiz="11">心情</button>
+          <button class="drag" quiz="12">出発</button>
+          <button class="drag" quiz="13">贖罪</button>
+          <button class="drag" quiz="14">数理</button>
+          <button class="drag" quiz="15">家庭</button>
+          <button class="drag" quiz="16">因習</button>
+          <button class="drag" quiz="17">反対</button>
+          <button class="drag" quiz="18">創造原理</button>
+          <button class="drag" quiz="19">罪の根</button>
+          <button class="drag" quiz="20">奇跡</button>
+          <button class="drag" quiz="21">雲</button>
+          <button class="drag" quiz="22">中間</button>
+          <button class="drag" quiz="23">愛</button>
+          <button class="drag" quiz="24">責任分担</button>
+          <button class="drag" quiz="25">本性</button>
+          <button class="drag" quiz="26">霊人体</button>
+          <button class="drag" quiz="27">善</button>
+          <button class="drag" quiz="28">信仰</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
