@@ -1,4 +1,26 @@
 $(function () {
+  function judgeWindowWidth() {
+    $(function(){
+      let windowSize = $(window).width();
+      if(windowSize <= 768) {
+        $('.header').load('./mobile-header.html');
+      } else if(windowSize >= 768) {
+        $('.header').load('./side-header.html');
+      }
+      
+      $(window).resize(function() {
+        windowSize = $(this).width();
+        if(windowSize <= 768) {
+          $('.header').load('./mobile-header.html');
+        } else if(windowSize >= 768) {
+          $('.header').load('./side-header.html');
+        };
+      });
+    });
+  };
+  judgeWindowWidth();
+
+
   function hambergerMenu() {
     $(document).on("click", ".hamberger, .accordion-list li", function() {
       const hambergerIcon = $(".hamberger .fa-bars");
