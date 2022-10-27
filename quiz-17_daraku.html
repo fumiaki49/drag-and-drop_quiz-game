@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第17回<span class="quiz-title">堕落論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・善悪を知る木というその木は、<span class="drop" quiz="14" data-name="blank">9</span>を完成した女性を象徴するものである。ゆえに、それは完成したエバを例えていった言葉であるということを知ることができるのである。
+          </li>
+          <li>
+            ・善悪の果とは何をいうのであろうか。すなわち、それはエバの<span class="drop" quiz="5" data-name="blank">10</span>を意味するのである。
+          </li>
+          <li>
+            ・神は<span class="drop" quiz="13" data-name="blank">11</span>部分と<span class="drop" quiz="12" data-name="blank">12</span>部分をもって、人間を創造されたがゆえに、堕落においても霊肉両面の堕落が成立した。天使とエバとの血縁関係による堕落が[ 11 ]堕落であり、エバとアダムとの血縁関係による堕落が[ 12 ]堕落である。
+          </li>
+          <li>
+            ・罪とは、サタンと相対基準を造成して授受作用をなすことができる条件を成立させることによって、<span class="drop" quiz="10" data-name="blank">13</span>に違反するようになることをいう。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">連帯</button>
+          <button class="drag" quiz="2">出発</button>
+          <button class="drag" quiz="3">み言</button>
+          <button class="drag" quiz="4">授受作用</button>
+          <button class="drag" quiz="5">愛</button>
+          <button class="drag" quiz="6">原罪</button>
+          <button class="drag" quiz="7">神性</button>
+          <button class="drag" quiz="8">四〇〇</button>
+          <button class="drag" quiz="9">孝</button>
+          <button class="drag" quiz="10">天法</button>
+          <button class="drag" quiz="11">実体</button>
+          <button class="drag" quiz="12">中間</button>
+          <button class="drag" quiz="13">霊的</button>
+          <button class="drag" quiz="14">創造理想</button>
+          <button class="drag" quiz="15">肉的</button>
+          <button class="drag" quiz="16">正</button>
+          <button class="drag" quiz="17">信仰</button>
+          <button class="drag" quiz="18">長成</button>
+          <button class="drag" quiz="19">心情</button>
+          <button class="drag" quiz="20">終末</button>
+          <button class="drag" quiz="21">主管</button>
+          <button class="drag" quiz="22">地上</button>
+          <button class="drag" quiz="23">位置</button>
+          <button class="drag" quiz="24">四十</button>
+          <button class="drag" quiz="25">神</button>
+          <button class="drag" quiz="26">天宙</button>
+          <button class="drag" quiz="27">三大祝福</button>
+          <button class="drag" quiz="28">肉身</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

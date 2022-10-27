@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第17回<span class="quiz-title">創造原理</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・今我々は、神の<span class="drop" quiz="7" data-name="blank">1</span>を知るために、被造世界に普遍的に潜んでいる共通の事実を探ってみること にしよう。存在しているものは、いかなるものであっても、それ自体の内においてばかりでなく、他の存在との間にも、陽性と陰性の二性性相の相対的関係を結ぶことによって、初めて存在するようになるのである。
+          </li>
+          <li>
+            ・神を<span class="drop" quiz="16" data-name="blank">2</span>として、それより分立して、再び合性一体化する作用を[ 2 ]分合作用と称する。
+          </li>
+          <li>
+            ・[ 2 ]分合作用により、[ 2 ]を中心として二性の実体対象に分立された主体と対象と、そして その合性体が、各自主体の立場をとるときには、各々残りのものを対象として立たせて、三対象基準 を造成する。そうして、それらがお互いに<span class="drop" quiz="4" data-name="blank">3</span>をするようになれば、ここで、その主体を中心として、各々三対象目的を完成するようになる。
+          </li>
+          <li>
+            ・神が被造世界を創造なさった目的は、人間をはじめ、すべての被造物が、神を中心として四位基台を完成し、<span class="drop" quiz="27" data-name="blank">4</span>のみ言を成就して、天国をつくることにより、善の目的が完成されたのを見て、喜び、楽しまれるところにあったのである。
+          </li>
+          <li>
+            ・全体的な目的を離れて、個体的な目的があるはずはなく、個体的な目的を保障しない全体的な目的もあるはずがない。したがって、森羅万象の被造物は、このような二重目的によって<span class="drop" quiz="1" data-name="blank">5</span>しあっている一つの広大な有機体なのである。
+          </li>
+          <li>
+            ・神の第三祝福は、万物世界に対する人間の<span class="drop" quiz="21" data-name="blank">6</span>性の完成を意味する。人間が祝福を成就するためには、神の形象的実体対象である人間と、その象徴的実体対象である万物世界とが、愛と美を授け受けして合性一体化することにより、神を中心とする[ 6 ]的な四位基台が完成されなければならない。
+          </li>
+          <li>
+            ・創造本然の価値は、ある対象と人間主体とが、<span class="drop" quiz="25" data-name="blank">7</span>を中心として、創造本然の四位基台を完成するときに決定されるが、この四位基台の中心が絶対者であられる[ 7 ]であるから、この価値の基準も絶対者なる神である。それゆえに、絶対者であられる[ 7 ]を基準として、これに対して相対的に決定されるある対象の創造本然の価値もまた絶対的でないはずがない。
+          </li>
+          <li>
+            ・すべての被造物が完成するに当たっても、その成長期間は、蘇生期、<span class="drop" quiz="18" data-name="blank">8</span>期、完成期の秩序的三段階を通じてのみ完成するようになる。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">連帯</button>
+          <button class="drag" quiz="2">出発</button>
+          <button class="drag" quiz="3">み言</button>
+          <button class="drag" quiz="4">授受作用</button>
+          <button class="drag" quiz="5">愛</button>
+          <button class="drag" quiz="6">原罪</button>
+          <button class="drag" quiz="7">神性</button>
+          <button class="drag" quiz="8">四〇〇</button>
+          <button class="drag" quiz="9">孝</button>
+          <button class="drag" quiz="10">天法</button>
+          <button class="drag" quiz="11">実体</button>
+          <button class="drag" quiz="12">中間</button>
+          <button class="drag" quiz="13">霊的</button>
+          <button class="drag" quiz="14">創造理想</button>
+          <button class="drag" quiz="15">肉的</button>
+          <button class="drag" quiz="16">正</button>
+          <button class="drag" quiz="17">信仰</button>
+          <button class="drag" quiz="18">長成</button>
+          <button class="drag" quiz="19">心情</button>
+          <button class="drag" quiz="20">終末</button>
+          <button class="drag" quiz="21">主管</button>
+          <button class="drag" quiz="22">地上</button>
+          <button class="drag" quiz="23">位置</button>
+          <button class="drag" quiz="24">四十</button>
+          <button class="drag" quiz="25">神</button>
+          <button class="drag" quiz="26">天宙</button>
+          <button class="drag" quiz="27">三大祝福</button>
+          <button class="drag" quiz="28">肉身</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

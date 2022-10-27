@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="top">
+        <div class="quiz-title-box">
+          <h1>第17回<span class="quiz-title">諸論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・元来、人間始祖が堕落しないで完成し、神と<span class="drop" quiz="19" data-name="blank">17</span>において一体となることができたならば、彼らは神のみに対して生活する立場におかれるはずであった。しかし、彼らは堕落してサタンと血縁関 係を結んだので、一方ではまた、サタンとも対応しなければならない立場におかれるようになったのである。したがって堕落直後、まだ<span class="drop" quiz="6" data-name="blank">15</span>だけがあり、他の善行も悪行も行わなかったアダムとエバは、神とも、またサタンとも対応することができる<span class="drop" quiz="12" data-name="blank">18</span>位置におかれるようになった。
+          </li>
+          <li>
+            ・蕩減条件はどの程度に立てなければならないのだろうか。この問いに対して、我々は次のような三つの種類のものを取りあげることができる。その第一は、同一のものをもって蕩減条件を立てることである。これは、失った本然の<span class="drop" quiz="23" data-name="blank">19</span>と状態と同一なる価値の条件を立てることによって、原状へと復帰することをいうのである。
+          </li>
+          <li>
+            ・堕落人間が創造目的を成就し得る基準を復帰するためには、まず初めに、人間始祖が立てることのできなかった、その「<span class="drop" quiz="11" data-name="blank">20</span>基台」を蕩減復帰しなければならない。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">連帯</button>
+          <button class="drag" quiz="2">出発</button>
+          <button class="drag" quiz="3">み言</button>
+          <button class="drag" quiz="4">授受作用</button>
+          <button class="drag" quiz="5">愛</button>
+          <button class="drag" quiz="6">原罪</button>
+          <button class="drag" quiz="7">神性</button>
+          <button class="drag" quiz="8">四〇〇</button>
+          <button class="drag" quiz="9">孝</button>
+          <button class="drag" quiz="10">天法</button>
+          <button class="drag" quiz="11">実体</button>
+          <button class="drag" quiz="12">中間</button>
+          <button class="drag" quiz="13">霊的</button>
+          <button class="drag" quiz="14">創造理想</button>
+          <button class="drag" quiz="15">肉的</button>
+          <button class="drag" quiz="16">正</button>
+          <button class="drag" quiz="17">信仰</button>
+          <button class="drag" quiz="18">長成</button>
+          <button class="drag" quiz="19">心情</button>
+          <button class="drag" quiz="20">終末</button>
+          <button class="drag" quiz="21">主管</button>
+          <button class="drag" quiz="22">地上</button>
+          <button class="drag" quiz="23">位置</button>
+          <button class="drag" quiz="24">四十</button>
+          <button class="drag" quiz="25">神</button>
+          <button class="drag" quiz="26">天宙</button>
+          <button class="drag" quiz="27">三大祝福</button>
+          <button class="drag" quiz="28">肉身</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
