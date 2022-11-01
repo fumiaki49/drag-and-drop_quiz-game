@@ -172,6 +172,7 @@
   padding: 10px 20px;
   letter-spacing: 0.05em;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .quiz-contents .answer-area .quiz-text li {
@@ -211,6 +212,7 @@
   padding: 5px 0;
   touch-action: none;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .quiz-contents .answer-area .select-box button:hover {
