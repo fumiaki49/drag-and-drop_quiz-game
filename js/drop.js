@@ -1,5 +1,5 @@
 $(function () {
-	const sound = new Audio("./audio/btn-sound1.mp3");
+	const dropsound = new Audio("./audio/btn-sound1.mp3");
 
 	// Drag
 	interact(".drag").draggable({
@@ -50,7 +50,7 @@ $(function () {
 			e.relatedTarget.posY += dropRect.top - dragRect.top;
 			e.relatedTarget.style.transform = `translate(${e.relatedTarget.posX}px, ${e.relatedTarget.posY}px)`;
 
-			sound.play();
+			dropsound.play();
 		},
 	}).on("dropactivate", function(e){
 		e.target.classList.add("drop-activated");
