@@ -49,7 +49,8 @@ $(function () {
 			e.relatedTarget.posX += dropRect.left - dragRect.left;
 			e.relatedTarget.posY += dropRect.top - dragRect.top;
 			e.relatedTarget.style.transform = `translate(${e.relatedTarget.posX}px, ${e.relatedTarget.posY}px)`;
-
+			
+			dropsound.currentTime = 0
 			dropsound.play();
 		},
 	}).on("dropactivate", function(e){
