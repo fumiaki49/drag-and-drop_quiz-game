@@ -32,6 +32,9 @@ $(function () {
   hambergerMenu();
 
   function scoringFunction() {
+    const failed_sound = new Audio("./audio/beep.mp3");
+    const correct_sound = new Audio("./audio/correct.mp3");
+
     $(document).on('click', '#scoring-btn', function () {
       const correctAnswer = document.querySelectorAll('[data-name="true"]');
       const uncorrectAnswer = document.querySelectorAll('[data-name="false"]');
@@ -43,12 +46,14 @@ $(function () {
           title: "もう一度考えてみよう！",
           text: "空白 or 不正解の箇所があります" 
         })
+        failed_sound.play();
       
       } else if( correctAnswer.length == quizList.length ) {
         Swal.fire({
           title: "全問正解!",
           text: "別の問題にも挑戦してみよう！",
         });
+        correct_sound.play();
     
         party.confetti(this, {
           lifetime: party.variation.range(2, 4),
