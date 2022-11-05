@@ -1,5 +1,5 @@
 $(function () {
-	const dropsound = new Audio("./audio/btn-sound1.mp3");
+	const dropsound = new Audio("./audio/drop.mp3");
 
 	// Drag
 	interact(".drag").draggable({
