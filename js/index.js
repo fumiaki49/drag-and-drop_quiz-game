@@ -33,7 +33,7 @@ $(function () {
 
   function scoringFunction() {
     const failed_sound = new Audio("./audio/beep.mp3");
-    const correct_sound = new Audio("./audio/correct.mp3");
+    const correct_sound = new Audio("./audio/fanfare.mp3");
 
     $(document).on('click', '#scoring-btn', function () {
       const correctAnswer = document.querySelectorAll('[data-name="true"]');
