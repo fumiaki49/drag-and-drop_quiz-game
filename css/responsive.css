@@ -60,6 +60,7 @@
 
   .quiz-list li details summary {
     letter-spacing: 5px;
+    border-bottom: unset;
   }
 
   .quiz-list li details summary::after {
