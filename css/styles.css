@@ -38,6 +38,10 @@
   position: relative;
 }
 
+.quiz-list li details summary::-webkit-details-marker {
+  display: none;
+}
+
 .quiz-list li details summary::after {
   content: "+";
   font-weight: bold;
