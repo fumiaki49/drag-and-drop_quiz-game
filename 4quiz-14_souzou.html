@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第14回<span class="quiz-title">創造原理</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・人間は長い歴史の期間にわたって、<span class="drop" quiz="13" data-name="blank">1</span>と宇宙に関する根本問題を解決するために苦悶してきた。けれども、今日に至るまで、この問題に対して納得のいく解答を我々に与えてくれた人は一人もいない。
+          </li>
+          <li>
+            ・我々はすべての存在を形成しているもっと根本的な、いま一つの二性性相の相対的関係を知らなければならない。存在するものはすべて、その<span class="drop" quiz="7" data-name="blank">2</span>と<span class="drop" quiz="27" data-name="blank">3</span>とを備えている。そして、その見えるところの[ 2 ]は、見ることのできない[ 3 ]が、そのごとくに現れたものである。
+          </li>
+          <li>
+            ・作家の喜びは、彼がもっている構想自体が対象となるか、あるいはその構想が、絵画とか彫刻などの作品として実体化して対象となったとき、その対象からくる刺激によって、自己の性相と形状とを<span class="drop" quiz="1" data-name="blank">4</span>的に感じて初めて生ずるようになる。
+          </li>
+          <li>
+            ・神の第三祝福は、万物世界に対する人間の<span class="drop" quiz="23" data-name="blank">5</span>性の完成を意味する。人間が祝福を成就するためには、神の形象的実体対象である人間と、その象徴的実体対象である万物世界とが、愛と美を授け受けして合性一体化することにより、神を中心とする[ 5 ]的な四位基台が完成されなければならない。
+          </li>
+          <li>
+            ・創造本然の価値は、ある対象と人間主体とが、神を中心として、創造本然の四位基台を完成するときに決定されるが、この四位基台の中心が<span class="drop" quiz="17" data-name="blank">6</span>者であられる神を基準として、これに対して相対的に決定されるある対象の創造本然の価値もまた[ 6 ]的でないはずがない。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">相対</button>
+          <button class="drag" quiz="2">愛</button>
+          <button class="drag" quiz="3">不信</button>
+          <button class="drag" quiz="4">父母</button>
+          <button class="drag" quiz="5">信仰</button>
+          <button class="drag" quiz="6">マラキ</button>
+          <button class="drag" quiz="7">外形</button>
+          <button class="drag" quiz="8">天宙</button>
+          <button class="drag" quiz="9">出発</button>
+          <button class="drag" quiz="10">創造理想</button>
+          <button class="drag" quiz="11">四十</button>
+          <button class="drag" quiz="12">重生</button>
+          <button class="drag" quiz="13">人生</button>
+          <button class="drag" quiz="14">反対</button>
+          <button class="drag" quiz="15">二十一</button>
+          <button class="drag" quiz="16">預言者</button>
+          <button class="drag" quiz="17">絶対</button>
+          <button class="drag" quiz="18">中間</button>
+          <button class="drag" quiz="19">再臨</button>
+          <button class="drag" quiz="20">喜び</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">み旨</button>
+          <button class="drag" quiz="23">主管</button>
+          <button class="drag" quiz="24">エリヤ</button>
+          <button class="drag" quiz="25">要素</button>
+          <button class="drag" quiz="26">条件物</button>
+          <button class="drag" quiz="27">内性</button>
+          <button class="drag" quiz="28">民族</button>
+          <button class="drag" quiz="29">肉身</button>
+          <button class="drag" quiz="30">原罪</button>
+          <button class="drag" quiz="31">聖霊</button>
+          <button class="drag" quiz="32">姦淫</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

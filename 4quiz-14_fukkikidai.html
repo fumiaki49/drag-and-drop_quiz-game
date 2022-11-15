@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第14回<span class="quiz-title">復帰基台摂理時代</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・堕落人間がその堕落性を脱ぐためには、蕩減復帰原理により、次に記録されているように、その堕落性本性をもつようになった経路と<span class="drop" quiz="14" data-name="blank">21</span>の経路をたどることによって、蕩減条件を立てなければならなかったのである。
+          </li>
+          <li>
+            ・ノアがアダムの身代わりとして、第二の人間始祖の立場に立つためには、アダムの堕落によってサタンの側に奪われた<span class="drop" quiz="8" data-name="blank">22</span>を、蕩減復帰するための条件を立てなければならない。したがって、新[ 22 ]を象徴する何らかの条件物を供え物として、神の前にみ意にかなうようにささげなければならなかったのである。このような条件物として立てられたのが、すなわち箱舟であった。
+          </li>
+          <li>
+            ・（アブラハムのイサク献祭にて）「今知った」と言われた「今」という神のみ言には、アブラハムの象徴献祭の過ちに対する叱責と、イサク献祭の成功に対する神の<span class="drop" quiz="20" data-name="blank">23</span>とが、共に強調されていることを、我々は知らなければならない。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">相対</button>
+          <button class="drag" quiz="2">愛</button>
+          <button class="drag" quiz="3">不信</button>
+          <button class="drag" quiz="4">父母</button>
+          <button class="drag" quiz="5">信仰</button>
+          <button class="drag" quiz="6">マラキ</button>
+          <button class="drag" quiz="7">外形</button>
+          <button class="drag" quiz="8">天宙</button>
+          <button class="drag" quiz="9">出発</button>
+          <button class="drag" quiz="10">創造理想</button>
+          <button class="drag" quiz="11">四十</button>
+          <button class="drag" quiz="12">重生</button>
+          <button class="drag" quiz="13">人生</button>
+          <button class="drag" quiz="14">反対</button>
+          <button class="drag" quiz="15">二十一</button>
+          <button class="drag" quiz="16">預言者</button>
+          <button class="drag" quiz="17">絶対</button>
+          <button class="drag" quiz="18">中間</button>
+          <button class="drag" quiz="19">再臨</button>
+          <button class="drag" quiz="20">喜び</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">み旨</button>
+          <button class="drag" quiz="23">主管</button>
+          <button class="drag" quiz="24">エリヤ</button>
+          <button class="drag" quiz="25">要素</button>
+          <button class="drag" quiz="26">条件物</button>
+          <button class="drag" quiz="27">内性</button>
+          <button class="drag" quiz="28">民族</button>
+          <button class="drag" quiz="29">肉身</button>
+          <button class="drag" quiz="30">原罪</button>
+          <button class="drag" quiz="31">聖霊</button>
+          <button class="drag" quiz="32">姦淫</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
