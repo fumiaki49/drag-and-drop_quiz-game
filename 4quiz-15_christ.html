@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第15回<span class="quiz-title">キリスト論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・人間の霊人体は無形世界を総合した<span class="drop" quiz="21" data-name="blank">15</span>相であり、その肉身は有形世界を総合した[ 15 ]相である。ゆえに、創造目的を完成した人間は、天宙を総合した[ 15 ]相となるのである。人間を小宇宙であるという理由はここにある。
+          </li>
+          <li>
+            ・人間は堕落した状態に状態にとどまっている限り、何らの価値もない存在であるが、真の父母としてのイエスによって<span class="drop" quiz="5" data-name="blank">16</span>され、原罪を脱いで善の子女になれば、イエスのように創造目的を完成した人間に復帰されるのである。
+          </li>
+          <li>
+            ・イエスと聖霊も、神の二性性相から実体的に分立された対象として立って、お互いに授受作用をして合性一体化することにより、神を中心とする四位基台をつくらなければならない。このとき、イエスと聖霊は、神を中心として一体となるのであるが、これがすなわち<span class="drop" quiz="24" data-name="blank">17</span>一体なのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">律法</button>
+          <button class="drag" quiz="2">母体</button>
+          <button class="drag" quiz="3">連帯</button>
+          <button class="drag" quiz="4">位置</button>
+          <button class="drag" quiz="5">重生</button>
+          <button class="drag" quiz="6">人間自身</button>
+          <button class="drag" quiz="7">価値</button>
+          <button class="drag" quiz="8">減少</button>
+          <button class="drag" quiz="9">ヨシュア</button>
+          <button class="drag" quiz="10">異端者</button>
+          <button class="drag" quiz="11">み言</button>
+          <button class="drag" quiz="1">属性</button>
+          <button class="drag" quiz="13">ペテロ</button>
+          <button class="drag" quiz="14">生素</button>
+          <button class="drag" quiz="15">契約</button>
+          <button class="drag" quiz="16">忠誠</button>
+          <button class="drag" quiz="17">責任分担</button>
+          <button class="drag" quiz="18">パウロ</button>
+          <button class="drag" quiz="19">自由</button>
+          <button class="drag" quiz="20">不信</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">肉身</button>
+          <button class="drag" quiz="23">真の愛</button>
+          <button class="drag" quiz="24">三位</button>
+          <button class="drag" quiz="25">マラキ</button>
+          <button class="drag" quiz="26">負債</button>
+          <button class="drag" quiz="27">個性</button>
+          <button class="drag" quiz="28">無知</button>
+          <button class="drag" quiz="29">中間</button>
+          <button class="drag" quiz="30">アロン</button>
+          <button class="drag" quiz="31">心情</button>
+          <button class="drag" quiz="32">知恵</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

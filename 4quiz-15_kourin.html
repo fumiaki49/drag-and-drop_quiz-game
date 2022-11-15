@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第15回<span class="quiz-title">メシヤの降臨とその再臨の目的</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・イエスはそのとき既に、ユダヤ人たちの不審により、結局、霊肉ともの救いの摂理は完成することができない状態になっていたので、霊的救いだけでも達成なさるために、その蕩減条件として、やむを得ず十字架の道を行くことに決定されたときだったからなのである。そんなときに、<span class="drop" quiz="13" data-name="blank">11</span>がこの道を遮るのは、結局、十字架による霊的救いの摂理の道さえも妨害することになるので、このように責められたのである。
+          </li>
+          <li>
+            ・エリヤが再臨するということは、既に、<span class="drop" quiz="25" data-name="blank">12</span>預言者が預言したことであって、洗礼ヨハネが、正に再臨したエリヤであるということは、イエスの証言であったのである。
+          </li>
+          <li>
+            ・イエスは貧しい大工の家庭で成長した一人の無学な青年であった。このような青年が名もない布教者として立ちあがり、自ら安息日の主であると称しながら、ユダヤ人たちが命のごとく考える安息日を破った。それだから、イエスはユダヤ人の救いの基準である<span class="drop" quiz="1" data-name="blank">13</span>を廃する人として知られるようになったのである。したがって、イエスはユダヤ人の指導者たちから信じられなくなり、やむを得ず、漁夫を呼んで弟子とし、取税人と遊女と罪人たちの友達となって、共に食べたり、飲んだりしたのである。
+          </li>
+          <li>
+            ・洗礼ヨハネは、その中心が天の方にあったときには、イエスをメシヤと知って証した。けれども、彼から霊的な摂理が切れて、人間洗礼ヨハネに立ち戻るや、彼の<span class="drop" quiz="28" data-name="blank">14</span>は、一層イエスに対する不信を引き起こすようになったのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">律法</button>
+          <button class="drag" quiz="2">母体</button>
+          <button class="drag" quiz="3">連帯</button>
+          <button class="drag" quiz="4">位置</button>
+          <button class="drag" quiz="5">重生</button>
+          <button class="drag" quiz="6">人間自身</button>
+          <button class="drag" quiz="7">価値</button>
+          <button class="drag" quiz="8">減少</button>
+          <button class="drag" quiz="9">ヨシュア</button>
+          <button class="drag" quiz="10">異端者</button>
+          <button class="drag" quiz="11">み言</button>
+          <button class="drag" quiz="1">属性</button>
+          <button class="drag" quiz="13">ペテロ</button>
+          <button class="drag" quiz="14">生素</button>
+          <button class="drag" quiz="15">契約</button>
+          <button class="drag" quiz="16">忠誠</button>
+          <button class="drag" quiz="17">責任分担</button>
+          <button class="drag" quiz="18">パウロ</button>
+          <button class="drag" quiz="19">自由</button>
+          <button class="drag" quiz="20">不信</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">肉身</button>
+          <button class="drag" quiz="23">真の愛</button>
+          <button class="drag" quiz="24">三位</button>
+          <button class="drag" quiz="25">マラキ</button>
+          <button class="drag" quiz="26">負債</button>
+          <button class="drag" quiz="27">個性</button>
+          <button class="drag" quiz="28">無知</button>
+          <button class="drag" quiz="29">中間</button>
+          <button class="drag" quiz="30">アロン</button>
+          <button class="drag" quiz="31">心情</button>
+          <button class="drag" quiz="32">知恵</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

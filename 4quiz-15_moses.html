@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第15回<span class="quiz-title">モーセ路程</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・<span class="drop" quiz="15" data-name="blank">24</span>の箱とは、至聖所に安置する律法の櫃であって、その中にはイエスと聖霊、すなわち天と地とを象徴する二つの石板が入っていた。そしてまた、そこには荒野路程でおけるイスラエル民族の命の糧であり、また、イエスの体を象徴するマナが、神の栄光を表象する金の壺に入れられて安置されていたのであり、また、イスラエルに神の能力を見せてくださった、芽を出した<span class="drop" quiz="30" data-name="blank">25</span>の杖が入っていたのである。
+          </li>
+          <li>
+            ・<span class="drop" quiz="9" data-name="blank">26</span>は、偵察四十日期間に不信に陥ってしまった全イスラエル民族の中で、モーセが立てた幕屋のための「信仰基台」の上に雄々しく立ち、変わらざる信仰と忠節をもって、「幕屋のための基台」を造成し、最後までそれを信奉した、たった二人のうちの一人であった。このように、たとえモーセは不信に陥っても、石板と幕屋と[ 24 ]の箱とは、依然として[ 26 ]が立てた「幕屋のための基台」の上におかれていたのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">律法</button>
+          <button class="drag" quiz="2">母体</button>
+          <button class="drag" quiz="3">連帯</button>
+          <button class="drag" quiz="4">位置</button>
+          <button class="drag" quiz="5">重生</button>
+          <button class="drag" quiz="6">人間自身</button>
+          <button class="drag" quiz="7">価値</button>
+          <button class="drag" quiz="8">減少</button>
+          <button class="drag" quiz="9">ヨシュア</button>
+          <button class="drag" quiz="10">異端者</button>
+          <button class="drag" quiz="11">み言</button>
+          <button class="drag" quiz="1">属性</button>
+          <button class="drag" quiz="13">ペテロ</button>
+          <button class="drag" quiz="14">生素</button>
+          <button class="drag" quiz="15">契約</button>
+          <button class="drag" quiz="16">忠誠</button>
+          <button class="drag" quiz="17">責任分担</button>
+          <button class="drag" quiz="18">パウロ</button>
+          <button class="drag" quiz="19">自由</button>
+          <button class="drag" quiz="20">不信</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">肉身</button>
+          <button class="drag" quiz="23">真の愛</button>
+          <button class="drag" quiz="24">三位</button>
+          <button class="drag" quiz="25">マラキ</button>
+          <button class="drag" quiz="26">負債</button>
+          <button class="drag" quiz="27">個性</button>
+          <button class="drag" quiz="28">無知</button>
+          <button class="drag" quiz="29">中間</button>
+          <button class="drag" quiz="30">アロン</button>
+          <button class="drag" quiz="31">心情</button>
+          <button class="drag" quiz="32">知恵</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

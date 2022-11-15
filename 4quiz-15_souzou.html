@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第15回<span class="quiz-title">創造原理</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・神の本性相と本形状は、各々本陽性と本陰性の相対的関係をもって現象化するので、神の本陽性と本陰性は、各々本性相と本形状の<span class="drop" quiz="12" data-name="blank">1</span>である。
+          </li>
+          <li>
+            ・全体的な目的を離れて、固体的な目的があるはずはなく、固体的な目的を保障しない全体的な目的もあるはずがない。したがって、森羅万象の被造物は、このような二重目的によって<span class="drop" quiz="3" data-name="blank">2</span>しあっている一つの広大な有機体なのである。
+          </li>
+          <li>
+            ・<span class="drop" quiz="27" data-name="blank">3</span>を完成した人間は、神を中心としたその心の実体対象となり、したがって、神の実体対象となる。ここで、その心と神は、このような実体対象からくる刺激によって、それ自体の性相と形状とを相対的に感ずることができるので、喜びに満ちることができるのである。
+          </li>
+          <li>
+            ・ある個性体の創造本然の<span class="drop" quiz="7" data-name="blank">4</span>は、それ自体の内に絶対的なものとして内在するものでなく、その個性体が、神の創造理想を中心として、ある対象として存在する目的と、それに対する人間主体の創造本然の[ 4 ]追求欲が相対的関係を結ぶことによって決定される。
+          </li>
+          <li>
+            ・万物は原理自体の主菅性、または自律性により、成長期間(間接主管圏)を経過することによって完成する。けれども、人間は原理自体の主管性や自律性だけでなく、それ自身の<span class="drop" quiz="17" data-name="blank">5</span>を全うしながら、この期間を経過して完成するように創造された。
+          </li>
+          <li>
+            ・生心というのは、神が臨在される霊人体の中心部分をいうのである。霊人体は神からくる<span class="drop" quiz="14" data-name="blank">6</span>(陽性)と肉身からくる生力要素(陰性)の二つの要素が授受作用をする中で成長する。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">律法</button>
+          <button class="drag" quiz="2">母体</button>
+          <button class="drag" quiz="3">連帯</button>
+          <button class="drag" quiz="4">位置</button>
+          <button class="drag" quiz="5">重生</button>
+          <button class="drag" quiz="6">人間自身</button>
+          <button class="drag" quiz="7">価値</button>
+          <button class="drag" quiz="8">減少</button>
+          <button class="drag" quiz="9">ヨシュア</button>
+          <button class="drag" quiz="10">異端者</button>
+          <button class="drag" quiz="11">み言</button>
+          <button class="drag" quiz="12">属性</button>
+          <button class="drag" quiz="13">ペテロ</button>
+          <button class="drag" quiz="14">生素</button>
+          <button class="drag" quiz="15">契約</button>
+          <button class="drag" quiz="16">忠誠</button>
+          <button class="drag" quiz="17">責任分担</button>
+          <button class="drag" quiz="18">パウロ</button>
+          <button class="drag" quiz="19">自由</button>
+          <button class="drag" quiz="20">不信</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">肉身</button>
+          <button class="drag" quiz="23">真の愛</button>
+          <button class="drag" quiz="24">三位</button>
+          <button class="drag" quiz="25">マラキ</button>
+          <button class="drag" quiz="26">負債</button>
+          <button class="drag" quiz="27">個性</button>
+          <button class="drag" quiz="28">無知</button>
+          <button class="drag" quiz="29">中間</button>
+          <button class="drag" quiz="30">アロン</button>
+          <button class="drag" quiz="31">心情</button>
+          <button class="drag" quiz="32">知恵</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

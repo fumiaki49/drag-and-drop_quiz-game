@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第15回<span class="quiz-title">復帰基台摂理時代</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・アダムは、神とサタンという二人の主人に対応するという非原理的な立場に立つようになる。神はこのような非原理的な摂理をなさることはできないので、善悪二つの性品の<span class="drop" quiz="2" data-name="blank">21</span>となったアダムを、善性品的な存在と悪性品的な存在との二つに分立する摂理をなさらなければならなかったのである。
+          </li>
+          <li>
+            ・神はノアが裸でいても、その家族たちがそれを見て恥ずかしがらず、また隠れようともしない姿を眺めることによって、かつて彼らが罪を犯す前に、どこを覆い隠すでもなく、ありのままに裸体を現していた、汚れのない人間の姿を御覧になって、喜びを満喫されたその<span class="drop" quiz="31" data-name="blank">22</span>を蕩減復帰しようとされたのである。
+          </li>
+          <li>
+            ・アブラハムが神の命令に従って、その約束の子イサクを殺そうとした<span class="drop" quiz="16" data-name="blank">23</span>は、「象徴献祭」の失敗によってサタンの侵入を受けた自分自身を殺そうとしたのと同様な立場をつくったのである。したがって、神がイサクを死んだ立場から立場からよみがえらせたということは、アブラハム自身も、イサクと同じく、死んだ立場から侵入したサタンを分立すると同時に、再びよみがえったということを意味するのである。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">律法</button>
+          <button class="drag" quiz="2">母体</button>
+          <button class="drag" quiz="3">連帯</button>
+          <button class="drag" quiz="4">位置</button>
+          <button class="drag" quiz="5">重生</button>
+          <button class="drag" quiz="6">人間自身</button>
+          <button class="drag" quiz="7">価値</button>
+          <button class="drag" quiz="8">減少</button>
+          <button class="drag" quiz="9">ヨシュア</button>
+          <button class="drag" quiz="10">異端者</button>
+          <button class="drag" quiz="11">み言</button>
+          <button class="drag" quiz="1">属性</button>
+          <button class="drag" quiz="13">ペテロ</button>
+          <button class="drag" quiz="14">生素</button>
+          <button class="drag" quiz="15">契約</button>
+          <button class="drag" quiz="16">忠誠</button>
+          <button class="drag" quiz="17">責任分担</button>
+          <button class="drag" quiz="18">パウロ</button>
+          <button class="drag" quiz="19">自由</button>
+          <button class="drag" quiz="20">不信</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">肉身</button>
+          <button class="drag" quiz="23">真の愛</button>
+          <button class="drag" quiz="24">三位</button>
+          <button class="drag" quiz="25">マラキ</button>
+          <button class="drag" quiz="26">負債</button>
+          <button class="drag" quiz="27">個性</button>
+          <button class="drag" quiz="28">無知</button>
+          <button class="drag" quiz="29">中間</button>
+          <button class="drag" quiz="30">アロン</button>
+          <button class="drag" quiz="31">心情</button>
+          <button class="drag" quiz="32">知恵</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
