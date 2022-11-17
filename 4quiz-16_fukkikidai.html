@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第16回<span class="quiz-title">復帰基台摂理時代</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・天使長が、神にもっと近かったアダムを<span class="drop" quiz="3" data-name="blank">21</span>に立て、彼を通じて神の愛を受けようとはせず、かえってアダムの位置を奪おうとして堕落してしまったので、「自己の位置を離れる堕落性」が生じた。
+          </li>
+          <li>
+            ・彼ら(アダムとエバ)が下部を恥ずかしく思ったという行為は、下部で罪を犯し、サタンと血縁関係を結んだという<span class="drop" quiz="30" data-name="blank">22</span>の表示であり、下部を覆って隠れたという行動は、サタンと血縁関係を結んでしまったので、神の前にあからさまに出ることを恐れた犯罪意識の表現であったのである。
+          </li>
+          <li>
+            ・(アブラハム家庭にて)供え物を裂くということは、第一に、アダムの家庭において、善悪の<span class="drop" quiz="11" data-name="blank">23</span>であるアダムを善と悪の二つの表示体に分立するために、アベルとカインに分立させたのと同じ立場を復帰するためであった。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">目的</button>
+          <button class="drag" quiz="2">信仰</button>
+          <button class="drag" quiz="3">中保</button>
+          <button class="drag" quiz="4">三対象</button>
+          <button class="drag" quiz="5">価値</button>
+          <button class="drag" quiz="6">エリヤ</button>
+          <button class="drag" quiz="7">個性</button>
+          <button class="drag" quiz="8">聖霊</button>
+          <button class="drag" quiz="9">心情</button>
+          <button class="drag" quiz="10">ヨシュア</button>
+          <button class="drag" quiz="11">母体</button>
+          <button class="drag" quiz="12">完成</button>
+          <button class="drag" quiz="13">実体</button>
+          <button class="drag" quiz="14">善</button>
+          <button class="drag" quiz="15">再臨主</button>
+          <button class="drag" quiz="16">アロン</button>
+          <button class="drag" quiz="17">原罪</button>
+          <button class="drag" quiz="18">天宙</button>
+          <button class="drag" quiz="19">家庭</button>
+          <button class="drag" quiz="20">真の親</button>
+          <button class="drag" quiz="21">愛</button>
+          <button class="drag" quiz="22">知恵</button>
+          <button class="drag" quiz="23">結実体</button>
+          <button class="drag" quiz="24">要素</button>
+          <button class="drag" quiz="25">情念</button>
+          <button class="drag" quiz="26">盤石</button>
+          <button class="drag" quiz="27">韓国</button>
+          <button class="drag" quiz="28">相対</button>
+          <button class="drag" quiz="29">性稟</button>
+          <button class="drag" quiz="30">預言</button>
+          <button class="drag" quiz="31">重生</button>
+          <button class="drag" quiz="32">御言</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

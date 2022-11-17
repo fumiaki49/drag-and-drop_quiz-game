@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第16回<span class="quiz-title">創造原理</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・被造物はすべて、無形の主体としていまし給う神の二性性相に似た実体に分立された、神の実体対象であることが分かった。このような実体対象を、我々は<span class="drop" quiz="7" data-name="blank">1</span>真理体と称する。人間は神の形象的な実体対象であるので、形象的[ 1 ]真理体といい、人間以外の被造物は、象徴的な実体対象であるために、それらを象徴的[ 1 ]真理体という。
+          </li>
+          <li>
+            ・正分合作用により、正を中心として二性の実体対象に分立された主体と対象と、そしてその合性体が、各自主体の立場をとるときには、各々残りのものを対象として立たせて、<span class="drop" quiz="4" data-name="blank">2</span>基準を造成する。そうして、それらがお互いに授受作用をするようになれば、ここで、その主体を中心として、各々[ 2 ]目的を完成するようになる。
+          </li>
+          <li>
+            ・四位基台は、創造目的を完成した<span class="drop" quiz="14" data-name="blank">3</span>の根本的な基台でもあるので、神が運行できるすべての存在と、またそれらが存在するための、すべての力の根本的な基台ともなる。
+          </li>
+          <li>
+            ・喜びは独自的に生ずるものではない。無形のものであろうと、実体であろうと、自己の性相と形状のとおりに展開された対象があって、それからくる刺激によって自体の性相と形状とを<span class="drop" quiz="28" data-name="blank">4</span>的に感ずるとき、ここに初めて喜びが生ずるのである。
+          </li>
+          <li>
+            ・人間は創造本然の<span class="drop" quiz="5" data-name="blank">5</span>実現欲によって、心で神の本然の知情意に感応し、体でこれを行動することによって、初めてその行動は、創造本然の真美善の[ 5 ]を表すようになるのである。
+          </li>
+          <li>
+            ・直接主管圏とは何であり、またこれを創造された目的は、どこにあるのだろうか。神を中心として、ある主体と対象とが合性一体化して四位基台をつくり、神と心情において一体となり、主体の意のままに愛と美を完全に授受して、善の目的を完成することを直接主管という。したがって、直接主管圏とは直に<span class="drop" quiz="12" data-name="blank">6</span>圏を意味する。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">目的</button>
+          <button class="drag" quiz="2">信仰</button>
+          <button class="drag" quiz="3">中保</button>
+          <button class="drag" quiz="4">三対象</button>
+          <button class="drag" quiz="5">価値</button>
+          <button class="drag" quiz="6">エリヤ</button>
+          <button class="drag" quiz="7">個性</button>
+          <button class="drag" quiz="8">聖霊</button>
+          <button class="drag" quiz="9">心情</button>
+          <button class="drag" quiz="10">ヨシュア</button>
+          <button class="drag" quiz="11">母体</button>
+          <button class="drag" quiz="12">完成</button>
+          <button class="drag" quiz="13">実体</button>
+          <button class="drag" quiz="14">善</button>
+          <button class="drag" quiz="15">再臨主</button>
+          <button class="drag" quiz="16">アロン</button>
+          <button class="drag" quiz="17">原罪</button>
+          <button class="drag" quiz="18">天宙</button>
+          <button class="drag" quiz="19">家庭</button>
+          <button class="drag" quiz="20">真の親</button>
+          <button class="drag" quiz="21">愛</button>
+          <button class="drag" quiz="22">知恵</button>
+          <button class="drag" quiz="23">結実体</button>
+          <button class="drag" quiz="24">要素</button>
+          <button class="drag" quiz="25">情念</button>
+          <button class="drag" quiz="26">盤石</button>
+          <button class="drag" quiz="27">韓国</button>
+          <button class="drag" quiz="28">相対</button>
+          <button class="drag" quiz="29">性稟</button>
+          <button class="drag" quiz="30">預言</button>
+          <button class="drag" quiz="31">重生</button>
+          <button class="drag" quiz="32">御言</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

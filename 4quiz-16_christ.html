@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第16回<span class="quiz-title">キリスト論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・マタイ福音書十六章26節に、イエスが、「たとい人が全世界をもうけても、自分の命を損したら、なんの得になろうか」と言われたのも、上記で述べたように、人間は<span class="drop" quiz="18" data-name="blank">15</span>的な価値をもっているからである。
+          </li>
+          <li>
+            ・父は一人でどうして子女を生むことができるだろうか。堕落した子女を、善の子女として、新たに生み直してくださるためには、真の父と共に、真の母がいなければならない。罪悪の子女たちを新たに生んでくださるために、真の母として来られた方が、まさしく<span class="drop" quiz="8" data-name="blank">16</span>である。
+          </li>
+          <li>
+            ・我々がコリント・十二章３節に記録されているみ言のように、[ 16 ]の感動によって、イエスを救い主として信じるようになれば、霊的な真の父であるイエスと、霊的な真の母である[ 16 ]の感動によって、イエスを救い主として信じるようになれば、霊的な真の父であるイエスと、霊的な真の母である[ 16 ]との授受作用によって生ずる霊的な真の父母の愛を受けるようになる。そうすればここで、彼を信じる信徒たちは、その愛によって新たな命が注入され、新しい霊的自我に<span class="drop" quiz="31" data-name="blank">17</span>されるのである。これを霊的[ 17 ]という。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">目的</button>
+          <button class="drag" quiz="2">信仰</button>
+          <button class="drag" quiz="3">中保</button>
+          <button class="drag" quiz="4">三対象</button>
+          <button class="drag" quiz="5">価値</button>
+          <button class="drag" quiz="6">エリヤ</button>
+          <button class="drag" quiz="7">個性</button>
+          <button class="drag" quiz="8">聖霊</button>
+          <button class="drag" quiz="9">心情</button>
+          <button class="drag" quiz="10">ヨシュア</button>
+          <button class="drag" quiz="11">母体</button>
+          <button class="drag" quiz="12">完成</button>
+          <button class="drag" quiz="13">実体</button>
+          <button class="drag" quiz="14">善</button>
+          <button class="drag" quiz="15">再臨主</button>
+          <button class="drag" quiz="16">アロン</button>
+          <button class="drag" quiz="17">原罪</button>
+          <button class="drag" quiz="18">天宙</button>
+          <button class="drag" quiz="19">家庭</button>
+          <button class="drag" quiz="20">真の親</button>
+          <button class="drag" quiz="21">愛</button>
+          <button class="drag" quiz="22">知恵</button>
+          <button class="drag" quiz="23">結実体</button>
+          <button class="drag" quiz="24">要素</button>
+          <button class="drag" quiz="25">情念</button>
+          <button class="drag" quiz="26">盤石</button>
+          <button class="drag" quiz="27">韓国</button>
+          <button class="drag" quiz="28">相対</button>
+          <button class="drag" quiz="29">性稟</button>
+          <button class="drag" quiz="30">預言</button>
+          <button class="drag" quiz="31">重生</button>
+          <button class="drag" quiz="32">御言</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
