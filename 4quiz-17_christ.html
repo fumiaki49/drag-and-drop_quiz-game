@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第17回<span class="quiz-title">キリスト論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・完成した人間は、唯一無二の存在であり、全被造世界の主人であるがゆえに、彼なしには、<span class="drop" quiz="18" data-name="blank">15</span>の存在価値も、完全になることはできないのである。したがって、人間は、[ 15 ]的な価値の存在である。イエスは、正に、このような価値をもっておられる方である。
+          </li>
+          <li>
+            ・イエスは、自分を訪ねてきたユダヤ人の官吏ニコデモに、新たに生まれなければ、神の国を見ることはできないと言われた。<span class="drop" quiz="11" data-name="blank">16</span>とは二度生まれるという意味である。
+          </li>
+          <li>
+            ・<span class="drop" quiz="29" data-name="blank">17</span>は真の母として、また後のエバとして来られた方であるので、[ 17 ]を女性神であると啓示を受ける人が多い。すなわち[ 17 ]は女性神であられるので、[ 17 ]を受けなくては、イエスの前に新婦として立つことができない。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">結果</button>
+          <button class="drag" quiz="2">み意</button>
+          <button class="drag" quiz="3">盤石</button>
+          <button class="drag" quiz="4">原罪</button>
+          <button class="drag" quiz="5">心情</button>
+          <button class="drag" quiz="6">生存</button>
+          <button class="drag" quiz="7">連帯</button>
+          <button class="drag" quiz="8">中和</button>
+          <button class="drag" quiz="9">愛</button>
+          <button class="drag" quiz="10">母体</button>
+          <button class="drag" quiz="11">重生</button>
+          <button class="drag" quiz="12">十二</button>
+          <button class="drag" quiz="13">反対</button>
+          <button class="drag" quiz="14">契約</button>
+          <button class="drag" quiz="15">責任</button>
+          <button class="drag" quiz="16">良心</button>
+          <button class="drag" quiz="17">自律</button>
+          <button class="drag" quiz="18">天宙</button>
+          <button class="drag" quiz="19">価値</button>
+          <button class="drag" quiz="20">二十一</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">神</button>
+          <button class="drag" quiz="23">選民</button>
+          <button class="drag" quiz="24">条件</button>
+          <button class="drag" quiz="25">信仰</button>
+          <button class="drag" quiz="26">四位基台</button>
+          <button class="drag" quiz="27">罪</button>
+          <button class="drag" quiz="28">四十</button>
+          <button class="drag" quiz="29">聖霊</button>
+          <button class="drag" quiz="30">預言者</button>
+          <button class="drag" quiz="31">淫行</button>
+          <button class="drag" quiz="32">救い主</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>

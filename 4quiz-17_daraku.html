@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドラッグ&ドロップ　原理Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/drop.js"></script>
+  </head>
+  <body class="default-page" data-barba="wrapper">
+    <header class="header">
+    </header>
+
+    <main class="quiz-contents">
+      <div class="answer-area" data-barba="container" data-barba-namespace="quiz-14_daraku">
+        <div class="quiz-title-box">
+          <h1>4級 第17回<span class="quiz-title">堕落論</span></h1>
+          <button id="scoring-btn">採点</button>
+        </div>
+        <div class="description-box">
+          <p><span class="icon">Q.</span><span class="text">ページ下部にある語群から、正解だと思う答えをドラッグ&ドロップして、空欄を全て埋めてください。</span></p>
+        </div>
+        <ul class="quiz-text">
+          <li>
+            ・人間が天使の誘惑に陥って堕落したという事実、人間も天使もみな<span class="drop" quiz="31" data-name="blank">7</span>によって堕落したという事実、その上にまた、被造世界においては、霊的存在であって、お互いにある情的関係を結ぶことのできる存在とは、人間と天使以外にはないという事実などを結びつけてみるとき、人間と天使との間に[ 7 ]関係が成り立ったであろうということは、容易にうなずくことができるのである。
+          </li>
+          <li>
+            ・エバはこのように、その<span class="drop" quiz="9" data-name="blank">8</span>をもって善の実を実らせることも、また悪の実を実らせることもできる成長期間を通過して、完成するように創造されていたのであった。それゆえに、その[ 8 ]を善悪の果といい、また、その人間を善悪を知る木といったのである。
+          </li>
+          <li>
+            ・<span class="drop" quiz="27" data-name="blank">9</span>の根は人間始祖が果実を取って食べたことにあったのではなく、蛇に表示された天使と不倫なる血縁関係を結んだところにあったということを知るようになった。したがって、彼らは神の善の血統を繁殖することができず、サタンの悪の血統を繁殖するようになったのである。
+          </li>
+          <li>
+            ・第一に、我々は、原理を離れた自由はない、という事実を知らなければならない。
+          </li>
+          <li>
+            ・第二に、<span class="drop" quiz="15" data-name="blank">10</span>のない自由はあり得ない。
+          </li>
+          <li>
+            ・第三に、実績のない自由はない。
+          </li>
+        </ul>
+        <div class="select-box">
+          <button class="drag" quiz="1">結果</button>
+          <button class="drag" quiz="2">み意</button>
+          <button class="drag" quiz="3">盤石</button>
+          <button class="drag" quiz="4">原罪</button>
+          <button class="drag" quiz="5">心情</button>
+          <button class="drag" quiz="6">生存</button>
+          <button class="drag" quiz="7">連帯</button>
+          <button class="drag" quiz="8">中和</button>
+          <button class="drag" quiz="9">愛</button>
+          <button class="drag" quiz="10">母体</button>
+          <button class="drag" quiz="11">重生</button>
+          <button class="drag" quiz="12">十二</button>
+          <button class="drag" quiz="13">反対</button>
+          <button class="drag" quiz="14">契約</button>
+          <button class="drag" quiz="15">責任</button>
+          <button class="drag" quiz="16">良心</button>
+          <button class="drag" quiz="17">自律</button>
+          <button class="drag" quiz="18">天宙</button>
+          <button class="drag" quiz="19">価値</button>
+          <button class="drag" quiz="20">二十一</button>
+          <button class="drag" quiz="21">実体</button>
+          <button class="drag" quiz="22">神</button>
+          <button class="drag" quiz="23">選民</button>
+          <button class="drag" quiz="24">条件</button>
+          <button class="drag" quiz="25">信仰</button>
+          <button class="drag" quiz="26">四位基台</button>
+          <button class="drag" quiz="27">罪</button>
+          <button class="drag" quiz="28">四十</button>
+          <button class="drag" quiz="29">聖霊</button>
+          <button class="drag" quiz="30">預言者</button>
+          <button class="drag" quiz="31">淫行</button>
+          <button class="drag" quiz="32">救い主</button>
+        </div>
+      </div>
+      <div class="mask"></div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="./js/barba.js"></script>
+</html>
